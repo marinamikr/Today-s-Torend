@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="modaal.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="modaal.min.js"></script>
+    <script src="jquery.bgswitcher.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".inline").modaal({
+
+            });
+        });
+
+        $(document).ready(function() {
+            $(".title").bgswitcher({
+                images: ["background.jpeg", "background2.jpeg", "background4.jpg"]
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="menu">
+
+        <ul class="example">
+    <div class="panel">
+<div class="panel bw">
+    <a class="button" href="#eat">食べる</a>
+    <a class="button" href="#scene">映え</a>
+    <a class="button" href="#app">アプリ</a>
+</div>
+</div>
+<!--
+            <li><a href="#eat">食べる</a></li>
+            <li><a href="#scene">映え</a></li>
+            <li><a href="#app">アプリ</a></li>
+-->
+        </ul>
+        <div class="under-element">
+        </div>
+    </div>
+
+    <div class="title">
+        <h1>Today's trend</h1>
+
+    </div>
+
+    <div class="white">
+        <span class="rainbow">日々変わりゆくトレンド??<br>
+        </span>
+    </div>
+
+
+
+    <div class="eating">
+        <h2 class="eat" id="eat">たべる</h2>
+        <a href="#content1" class="inline">
+            <div class="eat1">
+                <p>タピオカ</p>
+            </div>
+        </a>
+        <div id="content1" style="display:none;">最も流行ってると言っても過言じゃないタピオカ！！<br>
+            <!--        <img class="tapi" src="tapioka.jpg" alt="">-->
+        </div>
+        <a href="#content2" class="inline">
+
+            <div class="eat2">
+                <p>チーズハットグ</p>
+            </div>
+        </a>
+        <div id="content2" style="display:none;">外がサクッとしていていい音！<br>
+            砂糖をつけて、チーズを伸ばしながら食べると映える！！
+        </div>
+        <a href="#content3" class="inline">
+            <div class="eat3">
+                <p>スタバ</p>
+            </div>
+        </a>
+        <div id="content3" style="display:none;">やっぱりJKと言ったらスタバ！！<br>
+            新作の映え具合半端ない！！
+        </div>
+    </div>
+
+    <div class="place">
+        <h2 class="scene" id="scene">映え</h2>
+        <a href="#content4" class="inline">
+
+            <div class="scene1">
+                <p>ディズニー</p>
+            </div>
+        </a>
+        <div id="content4" style="display:none;">ディズニーはどこで写真を撮っても盛れる！<br>
+            オススメはマーメードラグーン！！<br>
+            ペアルックも良き！！
+        </div>
+        <a href="#content5" class="inline">
+
+            <div class="scene2">
+                <p>ハラジュク</p>
+            </div>
+        </a>
+
+        <div id="content5" style="display:none;">JKの街、原宿！！<br>
+            日本の流行の最先端！！映えるものがたっくさん！！
+        </div>
+        <a href="#content6" class="inline">
+
+            <div class="scene3">
+                <p>プリクラ</p>
+            </div>
+        </a>
+        <div id="content6" style="display:none;">様々な機種があるプリクラ！
+            オススメはコレカワfinやアオハル！！<br>
+            落書きするところで自撮りすると盛れるよ！！
+        </div>
+    </div>
+
+    <div class="App">
+        <h2 class="app" id="app">アプリ</h2>
+
+        <a href="#content7" class="inline">
+
+            <div class="app1">
+                <p>カメラ</p>
+            </div>
+        </a>
+        <div id="content7" style="display:none;">やっぱり盛れるカメラで自撮りするべき！！<br>
+            オススメは王道のSNOW、SODA、最近また流行っているBeautyPlus！！
+            フィルターがたくさんあって無限に撮れる！！
+        </div>
+        <a href="#content8" class="inline">
+
+            <div class="app2">
+                <p>インスタ</p>
+            </div>
+        </a>
+
+        <div id="content8" style="display:none;">友達と繋がったり流行りのものを調べたり... <br>
+            撮った写真を沢山の人に見せよ！！
+        </div>
+        <a href="#content9" class="inline">
+
+            <div class="app3">
+                <p>ティックトック</p>
+            </div>
+        </a>
+        <div id="content9" style="display:none;">友達と撮ったり、有名人を見たり、暇つぶしに見たり... <br>
+            特に友達との思い出作りにオススメ！！！
+        </div>
+
+    </div>
+
+</body>
+
+</html>

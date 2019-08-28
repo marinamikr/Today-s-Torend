@@ -1,0 +1,595 @@
+@charset "UTF-8";
+
+
+/* Create a series of empty pseudo-elements... */
+html:before,
+html:after,
+body:before,
+body:after {
+    content: "";
+    background: #FF6666;
+    position: fixed;
+    display: block;
+    z-index: 5;
+}
+
+/* ...and position them! */
+html:before {
+    height: 15px;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+html:after {
+    width: 15px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+body:before {
+    height: 15px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+body:after {
+    width: 15px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: #FFCA28
+}
+
+@font-face {
+    font-family: "font";
+    src: url("GN-Koharuiro_Sunray.ttf");
+}
+
+@font-face {
+    font-family: "font2";
+    src: url("azuki.ttf");
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif, "HanziPen SC", "Yuppy TC", "font;
+
+}
+
+header {
+    height: 10px;
+    padding-top: 0px;
+    background-size: cover;
+    background-position: center;
+    background-color: #FFCCCC;
+}
+
+/* navはここ */
+/*
+
+nav {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align: right;
+    background-color: #FFCCCC;
+    padding-right: 150px;
+}
+
+nav a {
+    background-color: transparent;
+    color: #FF99CC;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffcc11;
+}
+*/
+/*
+
+ul {
+    list-style-type: none;
+     リストのマーカーを指定する 
+    padding-left: 0;
+    display: inline-block;
+
+}
+
+nav ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    border: 3px;
+    color: #FFCCCC;
+    margin-top: 20px;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    background: #FFF;
+    border: solid 3px white;
+    border-radius: 5px;
+    margin-left: 260px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+*/
+
+
+.title {
+    height: 100vh;
+    background-image: url(background.jpeg);
+    background-color: #FFCCCC;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family: "HanziPen SC";
+    font-size: 90px;
+    margin-top: 0px;
+    padding-top: 20%;
+}
+
+.white {
+    height: 300px;
+}
+
+.menu {
+    height: 80px;
+    position: absolute;
+    width: 100%;
+
+}
+
+.example {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 30px;
+}
+
+
+/*
+
+.example li {
+    float: left;
+    list-style: none;
+    border: 3px;
+    color: #FFCCCC;
+    margin-top: 20px;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    background: #FFF;
+    border: solid 3px white;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+*/
+
+.under-elemhoent {
+    clear: both;
+}
+
+.eating {
+    height: 400px;
+}
+
+.eating h2 {
+    text-align: left;
+    margin-left: 120px;
+    font-size: 35px;
+    color: #EC407A;
+    margin-top: 20px;
+}
+
+.eat {
+    position: relative;
+    padding: .3em;
+}
+
+.eat:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: repeating-linear-gradient(-45deg, #FF7043, #FF7043 2px, #fff 2px, #fff 4px);
+}
+
+.eat1 {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 370px;
+    margin-top: 40px;
+    border: solid 3px #FFCCCC;
+    border-radius: 5px;
+    background-image: url(https://cdn.pixabay.com/photo/2019/08/12/20/01/boba-4402053_1280.jpg);
+    filter: opacity(70%);
+    background-size: cover;
+    background-position: 100%;
+}
+
+.eating p {
+    font-family: "font";
+    text-align: center;
+    margin-top: 45%;
+    font-size: 47px;
+    color: #fff;
+}
+
+.eat2 {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 40px;
+    border: solid 3px #FFCCCC;
+    border-radius: 5px;
+    background-image: url(cheese.jpg);
+    filter: opacity(70%);
+    background-size: cover;
+    background-position: 100%;
+}
+
+.eat3 {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 40px;
+    border: solid 3px #FFCCCC;
+    border-radius: 5px;
+    background-image: url(sutaba3.jpg);
+    filter: opacity(70%);
+    background-size: cover;
+    background-position: 100%;
+}
+
+
+.place {
+    height: 400px;
+}
+
+.place h2 {
+    text-align: left;
+    margin-left: 120px;
+    font-size: 35px;
+    color: #EC407A;
+    margin-top: 20px;
+}
+
+.scene {
+    position: relative;
+    padding: .3em;
+}
+
+.scene:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: repeating-linear-gradient(-45deg, #FF7043, #FF7043 2px, #fff 2px, #fff 4px);
+}
+
+.scene1 {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 370px;
+    margin-top: 40px;
+    border: solid 3px #FFCCCC;
+    border-radius: 5px;
+    background-image: url(disney.jpg);
+    filter: opacity(70%);
+    background-size: cover;
+    background-position: 100%;
+}
+
+.place p {
+    font-family: "font";
+    text-align: center;
+    margin-top: 45%;
+    font-size: 47px;
+    color: #fff;
+}
+
+.scene2 {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 40px;
+    border: solid 3px #FFCCCC;
+    border-radius: 5px;
+    background-image: url(harajuku.jpg);
+    filter: opacity(70%);
+    background-size: cover;
+    background-position: 100%;
+}
+
+.scene3 {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 40px;
+    border: solid 3px #FFCCCC;
+    border-radius: 5px;
+    background-image: url(puri2.jpg);
+    filter: opacity(70%);
+    background-size: cover;
+    background-position: 100%;
+}
+
+.App {
+    height: 500px;
+}
+
+.App h2 {
+    text-align: left;
+    margin-left: 120px;
+    font-size: 35px;
+    color: #EC407A;
+    margin-top: 20px;
+}
+
+.app {
+    position: relative;
+    padding: .3em;
+}
+
+.app:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: repeating-linear-gradient(-45deg, #FF7043, #FF7043 2px, #fff 2px, #fff 4px);
+}
+
+.app1 {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 370px;
+    margin-top: 40px;
+    border: solid 3px #FFCCCC;
+    border-radius: 5px;
+    background-image: url(camera.jpg);
+    filter: opacity(70%);
+    background-size: cover;
+    background-position: 100%;
+}
+
+.App p {
+    font-family: "font";
+    text-align: center;
+    margin-top: 45%;
+    font-size: 47px;
+    color: #fff;
+}
+
+.app2 {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 40px;
+    border: solid 3px #FFCCCC;
+    border-radius: 5px;
+    background-image: url(insuta.jpg);
+    filter: opacity(70%);
+    background-size: cover;
+    background-position: 100%;
+}
+
+.app3 {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 40px;
+    border: solid 3px #FFCCCC;
+    border-radius: 5px;
+    background-image: url(ticktok.jpg);
+    filter: opacity(70%);
+    background-size: cover;
+    background-position: 100%;
+}
+
+.rainbow {
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    margin: 50px;
+    font-family: "font2";
+    text-transform: uppercase;
+    /* 背景グラデーションを指定・幅を 200% にしておく */
+    background: linear-gradient(to right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
+    /* 背景画像を文字でマスクする */
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* 文字色を透明にできればよく color: transparent でも color: rgba(0, 0, 0, 0) でも可 */
+    color: transparent;
+    -webkit-color: transparent;
+    /* アニメーション指定 */
+    animation: example 4s linear infinite;
+}
+
+/* 背景の横位置をズラす */
+@keyframes example {
+    to {
+        background-position-x: 200%;
+    }
+}
+
+
+
+body {
+    text-align: center;
+}
+
+.tapi {
+    width: 30%;
+    height: auto;
+    margin-left: 70%;
+}
+
+@import 'https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&subset=cyrillic,cyrillic-ext,latin-ext';
+
+* {
+    box-sizing: border-box
+}
+
+.button {
+    color: #fff;
+    background: transparent;
+    border-width: 2px;
+    border-style: solid;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 30px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-family: comfortaa;
+    font-weight: bold
+}
+
+.button:before,
+.button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-color: #454545;
+    box-sizing: border-box;
+    border-style: solid;
+    width: 1em;
+    height: 1em;
+    transition: all 0.3s ease-in-out
+}
+
+.button:before {
+    top: -6px;
+    left: -6px;
+    border-width: 2px 0 0 2px;
+    z-index: 5;
+}
+
+.button:after {
+    bottom: -6px;
+    right: -6px;
+    border-width: 0 2px 2px 0;
+}
+
+.button:hover:before,
+.button:hover:after {
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    border-color: #fff
+}
+
+.button:hover {
+    color: #353535;
+    background-color: #fff;
+    border-color: #fff
+}
+
+.panel {
+    max-width: 960px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+}
+
+.borderless .button {
+    border-color: rgba(0, 0, 0, 0);
+    color: #999
+}
+
+.borderless .button:hover {
+    border-color: #353535;
+    background-color: transparent;
+    color: #3FF666;
+}
+
+.borderless .button:before,
+.borderless .button:after {
+    border-color: transparent;
+}
+
+.borderless .button:hover:before,
+.borderless ..button:hover:after {
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    border-color: #353535
+}
+
+.bw .button {
+    color: #fff;
+    border-color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1) inset
+}
+
+.bw .button:before,
+.bw .button:after {
+    border-color: #fff
+}
+
+.bw .button:hover:before,
+.bw .button:hover:after {
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    border-color: #ffffff;
+}
+
+.bw .button:hover {
+    color: #fff;
+    background-color: transparent;
+    border-color: #FFF;
+}
+
+.blue .panel {
+    max-width: 960px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+}
+
+Resources
