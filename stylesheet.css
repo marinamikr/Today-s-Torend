@@ -435,7 +435,8 @@ h1 {
     font-size: 30px;
     text-align: center;
     display: inline-block;
-    margin: 50px;
+    margin-top: 70px;
+/*    margin: 50px;*/
     font-family: "font2";
     text-transform: uppercase;
     /* 背景グラデーションを指定・幅を 200% にしておく */
@@ -448,6 +449,8 @@ h1 {
     -webkit-color: transparent;
     /* アニメーション指定 */
     animation: example 4s linear infinite;
+    letter-spacing; 5px;
+    line-height: 80px;
 }
 
 /* 背景の横位置をズラす */
